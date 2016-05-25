@@ -1,4 +1,4 @@
-#ifndef _FM_SDK_H_
+﻿#ifndef _FM_SDK_H_
 #define _FM_SDK_H_
 
 #include "SystemExport.h"
@@ -13,5 +13,6 @@
 #include "DynamicLibrary.h"
 #include "ExecutionContext.h"
 #include "XmlConfig.h"
+#include "StringUtil.h"
 
 #endif
