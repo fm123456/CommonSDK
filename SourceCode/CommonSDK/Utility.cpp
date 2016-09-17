@@ -104,7 +104,7 @@ void Timer::Reset()
 	value = Now();
 }
 
-boost::int64_t Timer::Interval() const
+long long Timer::Interval() const
 {
 	return Now() - value;
 }
@@ -119,8 +119,8 @@ double Timer::Seconds() const
     return (Now() - value)*1E-9;
 #endif
 }
-
-boost::int64_t Timer::Now()
+//boost::int64_t
+long long Timer::Now()
 {
 	long long result;
 #if defined(WIN32) || defined(_WINDOWS)

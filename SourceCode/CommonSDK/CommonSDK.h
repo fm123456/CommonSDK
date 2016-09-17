@@ -14,5 +14,7 @@
 #include "ExecutionContext.h"
 #include "XmlConfig.h"
 #include "StringUtil.h"
+#include "ThreadTask.h"
+#include "ThreadPool.h"
 
 #endif

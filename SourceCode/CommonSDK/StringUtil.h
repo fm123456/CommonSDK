@@ -12,6 +12,7 @@ namespace fm {
 */
 class LIB_SDK StringUtil
 {
+public:
 	/** 
 	* @brief  32位有符号整型转成字符串
 	*
@@ -59,6 +60,38 @@ class LIB_SDK StringUtil
 	* @return 返回转换后的double值
 	*/
 	static double ConvertStringToDouble(std::string value);
+
+	/** 
+	* @brief  格式化字符串
+	*
+    * @param  str 结果字符串
+    * @param  fmt 格式化字符
+    * @param  ... 可变参数列表
+    */
+    static void Format(std::string& str, const char* fmt , ...) ;
+
+	/** @brief  转换为大写
+	*
+	@param   str 需要操作的字符串
+	*/
+	static void MakeUpper(std::string& str);
+
+   /**
+	* @brief  转换为小写
+	*
+	@param  str 需要操作的字符串
+	*/
+	static void MakeLower(std::string& str);
+
+	/**
+	* @brief  比较字符串，不区分大小写
+	*
+	@param  lhs 左值字符串
+	@param  rhs 右值字符串
+	@param  bNoCase 是否区分大小写
+	@return true 相等 false 不相等
+	*/
+	static bool IsEqual(const std::string& lhs, const std::string& rhs, bool bNoCase = true);
 };
 
 }
